@@ -1,0 +1,195 @@
+/*******
+Universal Styles
+*******/
+
+* {
+  font-family: "Varela Round", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 76px;
+  color: #3a3a3a;
+}
+
+/*******
+Navigation Styles
+*******/
+
+nav {
+  background: white;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 15px;
+  color: #3acec2;
+}
+
+a:hover {
+  color: #093a58;
+}
+
+.brand {
+  display: block;
+  padding: 10px 15px;
+  font-size: 1.3em;
+  color: #093a58;
+}
+
+/*******
+Banner Styles
+*******/
+
+.banner {
+  text-align: center;
+  color: #fff;
+  background: #3acec2;
+  padding: 50px 0;
+  margin-bottom: 60px;
+}
+
+.banner-image {
+  width: 190px;
+}
+
+/*******
+Container Styles
+*******/
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.secondary-content,
+.primary-content,
+.tertiary-content {
+  line-height: 1.5em;
+  word-spacing: 4px;
+}
+
+/*******
+Element Styles
+*******/
+
+.section-heading {
+  color: #093a58;
+}
+
+figure {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  background: rgba(19, 43, 102, 0.85);
+  color: white;
+  padding: 1em;
+  position: absolute;
+  bottom: 0;
+}
+
+figcaption p:last-of-type {
+  margin-bottom: 0;
+}
+
+.location-image {
+  width: 35px;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+}
+
+img {
+  width: 100%;
+}
+
+footer {
+  background: #d9e4ea;
+  text-align: center;
+  margin-top: 30px;
+  padding: 2em;
+}
+
+/*******
+Media Elements
+*******/
+
+@media (min-width: 840px) {
+  header {
+    position: relative;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 1px 5px 1px lightgrey;
+    z-index: 1000;
+  }
+
+  nav {
+    padding: 1em;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  .container{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .brand {
+    float: left;
+  }
+
+  ul {
+    float: right;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  .primary-content,
+  .secondary-content {
+    width: 50%;
+    padding: 1em;
+  }
+  .col {
+    float: left;
+  }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@media (min-width: 1120px) {
+  .primary-content {
+    width: 40%;
+  }
+  .secondary-content,
+  .tertiary-content {
+    width: 30%;
+  }
+  .tertiary-content {
+    padding: 1em;
+    float: left;
+  }
+}
